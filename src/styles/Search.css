@@ -1,21 +1,22 @@
-div.Search {
+.search {
 	margin-bottom: 7px;
 }
 
-div.Search label {
+.search label {
   font-weight: bold;
 }
 
-div.Search input {
+.search input {
   border: 1px solid #D8D8D8;
   border-radius: 25px;
   padding: 15px;
   width: 400px;
   margin-left: 18px;
+  outline: none;
 }
 
 @media (max-width: 600px) {
-	div.Search input {
+	.search input {
 		width: 250px;
 	}
 }

@@ -1,4 +1,4 @@
-div.card-img label {
+.card-img label {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -8,10 +8,10 @@ div.card-img label {
   	padding: 8px 10px 5px 11px;
 }
 
-label.blue-label {
+.blue-label {
 	background: #006F79; 
 }
 
-label.orange-label {
+.orange-label {
 	background: #EC6608; 
 }

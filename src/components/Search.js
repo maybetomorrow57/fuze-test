@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/Search.css';
+import '../styles/search.css';
 
 
 function Search(props) {
@@ -9,7 +9,7 @@ function Search(props) {
 	};
 
 	return (
-		<div className="Search"> 
+		<div className="search"> 
 			<label htmlFor = "search">Filter</label> 
 			<input id = "search" type = "text" value = {props.search} onChange = {handleChange}/>
 		</div>

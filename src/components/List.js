@@ -1,7 +1,8 @@
 import React from "react";
-import '../styles/List.css';
+import '../styles/list.css';
 import image from "../images/image.png";
-import Type from './Type';
+import Type from "./Type";
+import separateWithComma from "../functions/separateWithComma";
 
 
 function List(props) {
@@ -19,11 +20,11 @@ function List(props) {
 	}
 
 	let houses = props.data.houses.concat();
-	if (props.search != "" && props.search.length > 3) {
+	if (props.search !== "" && props.search.length > 3) {
 		houses = houses.filter(house => house.title.toLowerCase().includes(props.search.toLowerCase()));
 	}
 
-	if (houses.length == 0) {
+	if (houses.length === 0) {
 		return (
 			<div className = "no-results">No results were found for your search...</div>
 		);
@@ -31,7 +32,7 @@ function List(props) {
 
 
 	return (
-		<div className="List"> 
+		<div className="list"> 
 			{houses.map(house => (
 				<div className = "card" key = {house.id}>
 					<a href = {`/details/${house.id}`} target = "_blank">
@@ -41,7 +42,7 @@ function List(props) {
 						</div>
 						<h3>{house.title}</h3>
 						<p className = "address">{house.address}</p>
-						<p className = "price">New Properties for Sale from <span>£{house.price}</span></p>
+						<p className = "price">New Properties for Sale from <span>£{separateWithComma(house.price)}</span></p>
 						<p className = "shared">Shared Ownership Available</p>
 					</a>
 				</div>

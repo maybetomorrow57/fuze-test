@@ -1,8 +1,10 @@
-div.App {
-  padding: 0 51px;
+.app {
+  padding: 0 50px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-div.App h2 {
+.app h1 {
   font-size: 2.25em;
   font-weight: bold;
   text-align: center;
@@ -10,19 +12,24 @@ div.App h2 {
   margin: 36px 0 43px 0;
 }
 
-div.App button {
+.app button {
 	display: block;
 	width: 150px;
 	padding: 12px 33px;
 	font-weight: bold;
 	border: 1px solid #D8D8D8;
 	border-radius: 25px;
-	color: #363636;
 	margin: 60px auto 77px auto;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.app button:hover {
+	background: #00bfff;
 }
 
 @media (max-width: 600px) {
-	div.App h2 {
+	.app h1 {
 		font-size: 1.75em;
 	}
 }

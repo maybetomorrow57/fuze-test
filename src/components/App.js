@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
-import '../styles/App.css';
+import '../styles/app.css';
 import List from './List';
 import Search from './Search';
 
@@ -18,8 +18,8 @@ function App() {
 	}, []);
 
 	return (
-	    <div className="App">
-	    	<h2>Our Latest Developments</h2>
+	    <div className="app">
+	    	<h1>Our Latest Developments</h1>
 	    	<Search search = {search} setSearch = {setSearch} />
 	    	<List data = {data} search = {search}/>
 	    	<button>

@@ -1,70 +1,71 @@
-div.List {
+.list {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
-div.card {
-  flex: 0 1 30%;
-  margin-top: 38px;
+.card {
+  flex: 0 1 31.3%;
+  margin: 38px 1% 0 1%;
   background: #F8F8F8;
+  border: 1px solid #D8D8D8;
 } 
 
-div.card-img img {
+.card-img img {
   display: block;
   width: 100%;
 }
 
-div.card-img {
+.card-img {
   position: relative;
 }
 
-div.List a {
+.list a {
   text-decoration: none;
 }
 
-div.card h3 {
+.card h3 {
   font-size: 1.25em;
   font-weight: bold;
   margin: 15px 0px 0px 0px;
   padding-left: 20px;
 }
 
-div.card p {
+.card p {
   padding-left: 20px;
 }
 
-div.card p span{
+.card p span{
   font-weight: bold;
 }
 
-p.address {
+.address {
   margin: 2px 0px 0px 0px;
 }
 
-p.price {
+.price {
   margin: 15px 0px 7px 0px;
 }
 
-p.shared {
+.shared {
   font-size: 0.875em;
   margin-bottom: 17px;
 }
 
-div.no-results, div.loading, div.error {
+.no-results, .loading, .error {
   text-align: center;
   font-size: 20px;
   margin-top: 38px;
 }
 
 @media (max-width: 800px) {
-	div.card {
-		flex: 0 1 45%;
+	.card {
+		flex: 0 1 48%;
 	}
 }
 
 @media (max-width: 600px) {
-	div.card {
+	.card {
 		flex: 0 1 100%;
+		margin: 38px 0 0 0;
 	}
 }

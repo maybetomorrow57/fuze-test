@@ -1,8 +1,8 @@
 import React from "react";
-import '../styles/Type.css';
+import '../styles/type.css';
 
 function Type(props) {
-	let labelColor = (props.type == "IndependentLiving") ? "blue-label" : "orange-label";
+	let labelColor = (props.type === "IndependentLiving") ? "blue-label" : "orange-label";
 
 	return (
 		<label className = {labelColor}>{props.type}</label>
