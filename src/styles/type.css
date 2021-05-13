@@ -1,0 +1,17 @@
+.card-img label {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 0.75em;
+  	font-weight: bold;
+  	color: #FFFFFF;
+  	padding: 8px 10px 5px 11px;
+}
+
+.blue-label {
+	background: #006F79; 
+}
+
+.orange-label {
+	background: #EC6608; 
+}
